@@ -1,4 +1,16 @@
+/* General */
 #wrapper {
-    padding: 60px;
     margin: 60px;
 }
+.header {
+    text-align: center;
+}
+
+/* Slide formatting */
+.slide {
+
+}
+
+/* Win Slide */
+
+/* Lose Slide */

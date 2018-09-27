@@ -25,52 +25,51 @@ On the final screen, show the number of correct answers, incorrect answers, and 
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="container">
-            <div class="jumbotron">
-
-                <!-- Game header and instructions -->
-                <div id="header" class="row">
+<div id="wrapper">
+    <div class="container">
+        
+        <!-- Game header and instructions -->
+                <div class="row header">
                     <div class="col-lg-12">
                         <h1>Coder vs. Wild</h1>
-                        <h3>Do you know enough to survive?</h3>
                     </div>
                 </div>
+        
+        <div class="jumbotron">
 
-                <!-- Start game slide-->
+            <!-- Start game slide-->
+            <div id="startSlide" class="slide">
+                
                 <div class="row">
                     <div id="" class="col-lg-12">
+                        <h3>Do you know enough to survive?</h3>
                         <button id="startButton" class="button btn-lg">Click to start</button>
                     </div>
                 </div>
 
-                <!-- Question slide -->
+            </div>
+
+            <!-- Question slide -->
+            <div class="slide">
+
                 <div id="questionSlide" class="row">
                     <div id="" class="col-lg-12">
-                        <h2>Question # <span id="questionNumber"></span></h2>
-                        <p id="question">
-
-                        </p>
+                        <h2>Question #1: </h2>
+                        <div id="questionText"></div>
 
                         <form id="options">
                             <div class="form-check">
-                                <input type="radio" id="option1" class="form-check-input" value="1" name="option"
+                                <input type="radio" id="option1" class="form-check-input" value="A" name="option"
                                     checked>
-                                <label class="form-check-label" for="option1">
-                                    A
-                                </label>
+                                <label class="form-check-label" for="option1"> A </label>
                             </div>
                             <div class="form-check">
-                                <input type="radio" id="option2" class="form-check-input" value="2" name="option">
-                                <label class="form-check-label" for="option2">
-                                    B
-                                </label>
+                                <input type="radio" id="option2" class="form-check-input" value="B" name="option">
+                                <label class="form-check-label" for="option2"> B </label>
                             </div>
                             <div class="form-check">
-                                <input type="radio" id="option3" class="form-check-input" value="3" name="option">
-                                <label class="form-check-label" for="option3">
-                                    C
-                                </label>
+                                <input type="radio" id="option3" class="form-check-input" value="C" name="option">
+                                <label class="form-check-label" for="option3"> C </label>
                             </div>
 
                             <input id="guess" class="" type="submit" value="Will you survive?">
@@ -79,27 +78,33 @@ On the final screen, show the number of correct answers, incorrect answers, and 
                     </div>
                 </div>
 
-                <!-- Correct answer slide -->
-                <div id="winSlide" class="row">
-                    <div class="col-lg-12">
-                        <h2>You're still alive!</h2>
-                    </div>
+            </div>
 
+            <!-- Correct answer slide -->
+            <div class="slide">
+            <div id="winSlide" class="row">
+                <div class="col-lg-12">
+                    <h2>You're still alive!</h2>
                 </div>
-                
-                <!-- Wrong answer slide -->
-                <div id="loseSlide" class="row">
-                    <div class="col-lg-12">
-                        <h2>You died!</h2>
-                    </div>
-
-                </div>
-
-                
 
             </div>
+            </div>
+
+            <!-- Wrong answer slide -->
+            <div class="slide">
+            <div id="loseSlide" class="row">
+                <div class="col-lg-12">
+                    <h2>You died!</h2>
+                </div>
+
+            </div>
+            </div>
+
+
+
         </div>
     </div>
+</div>
 
 
 
